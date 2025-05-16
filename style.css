@@ -1,0 +1,86 @@
+:root {
+    --color_1: #BCA263;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--color_1);
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background: var(--color_1);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.conversor-img {
+    width: 180px;
+}
+
+.moneda {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.moneda input {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: right;
+}
+
+.taza_cambio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio {
+    color: var(--color_1);
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width:600px) {
+    .moneda input {
+        width: 200px;
+    }
+}
